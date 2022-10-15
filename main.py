@@ -11,5 +11,6 @@ salaries = [
 
 names = list(map(lambda tup:tup[0], salaries))
 salary_values = list(map(lambda tup:tup[1], salaries))
+
 fig = go.Figure(data=go.Bar(x=names,y=salary_values))
 fig.show()
